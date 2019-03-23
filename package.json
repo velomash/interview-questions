@@ -1,0 +1,22 @@
+{
+  "name": "interview-questions",
+  "version": "1.0.0",
+  "description": "A grouping of interesting interview questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest src --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/velomash/interview-questions.git"
+  },
+  "author": "Adam Trimble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/velomash/interview-questions/issues"
+  },
+  "homepage": "https://github.com/velomash/interview-questions#readme",
+  "dependencies": {
+    "jest": "^24.5.0"
+  }
+}
