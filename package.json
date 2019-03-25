@@ -4,6 +4,7 @@
   "description": "A grouping of interesting interview questions",
   "main": "index.js",
   "scripts": {
+    "start": "jest src --watch",
     "test": "jest src --watch"
   },
   "repository": {
@@ -17,6 +18,16 @@
   },
   "homepage": "https://github.com/velomash/interview-questions#readme",
   "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-jest": "^24.5.0",
     "jest": "^24.5.0"
+  },
+  "devDependencies": {
+    "bili": "^4.7.1",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "regenerator-runtime": "^0.13.2"
   }
 }

@@ -1,4 +1,4 @@
-const sudoku_data = [
+export const sudokuData = [
   [5, 3, 4, 6, 7, 8, 9, 1, 2],
   [6, 7, 2, 1, 9, 5, 3, 4, 8],
   [1, 9, 8, 3, 4, 2, 5, 6, 7],
@@ -10,7 +10,11 @@ const sudoku_data = [
   [3, 4, 5, 2, 8, 6, 1, 7, 9],
 ];
 
-export function validateRows(sudoku_data) {}
-export function validateColumns(sudoku_data) {}
-export function validateGrids(sudoku_data) {}
-export function validatePuzzle(sudoku_data) {}
+export function validateRows(sudokuData) {
+  return sudokuData.every(row =>
+    row.every((item, index) => item === index + 1),
+  );
+}
+export function validateColumns(sudokuData) { return true; }
+export function validateGrids(sudokuData) { return true; }
+export function validatePuzzle(sudokuData) { return true; }
